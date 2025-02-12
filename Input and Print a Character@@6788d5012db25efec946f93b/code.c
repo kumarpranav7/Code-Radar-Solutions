@@ -7,7 +7,7 @@ int main() {
     scanf(" %c", &ch);  
 
     // Print the exact required output format
-    printf("you entered %c\n", ch);
+    printf("", ch);
 
     return 0;
 }
