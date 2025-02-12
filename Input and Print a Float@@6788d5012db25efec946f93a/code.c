@@ -2,8 +2,17 @@
 
 int main() {
     float num;
-    printf("enter a floating-point number: "); // Ensure exact prompt
-    scanf("%f", &num);  // No extra space before %f is needed
-    printf("you entered: %.2f\n", num); // Ensures exactly 2 decimal places
+    
+    // Ensure prompt matches expected format exactly
+    printf("enter a floating-point number: ");  
+    
+    // Read input properly
+    if (scanf("%f", &num) != 1) {
+        return 1; // Exit if input is invalid
+    }
+
+    // Print output exactly as expected
+    printf("you entered: %.2f\n", num);
+    
     return 0;
 }
